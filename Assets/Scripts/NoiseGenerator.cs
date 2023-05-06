@@ -7,7 +7,7 @@ using UnityEngine;
 //Static class that generates a 2D map of perlin noise based on a scale factor
 public static class NoiseGenerator
 {
-    public static float[,] GenerateNoise(int width, int height, int seed, float scale, int octaves, float lacunarity, float persistence,Vector2 offset)
+    public static float[,] GenerateNoise(int width = 100, int height = 100, int seed = 25, float scale = 15, int octaves = 3, float lacunarity = 2, float persistence = 0.5f,Vector2 offset = default(Vector2))
     {
         float[,] noiseMap = new float[width, height];
         //Creates a random seed/starting point for the perlin noise

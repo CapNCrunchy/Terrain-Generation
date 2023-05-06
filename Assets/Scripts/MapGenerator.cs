@@ -34,6 +34,8 @@ public class MapGenerator : MonoBehaviour
     public Texture2D TextureFromColorMap(Color[] colorMap)
     {
         Texture2D mapTexture = new Texture2D(mapWidth, mapHeight);
+        mapTexture.filterMode = FilterMode.Point;
+        mapTexture.wrapMode = TextureWrapMode.Clamp;
         mapTexture.SetPixels(colorMap);
         mapTexture.Apply();
         return mapTexture;

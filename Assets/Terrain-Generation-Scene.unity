@@ -155,33 +155,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eccb9b3c1fac144d9ec2beed083d13f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawMode: 1
-  mapWidth: 100
-  mapHeight: 100
-  noiseScale: 26.57
-  octaves: 4
+  drawMode: 0
+  mapWidth: 1
+  mapHeight: 1
+  noiseScale: 0
+  octaves: 0
   persistence: 0
-  lacunarity: 5.63
-  seed: -87
-  offset: {x: -16.13, y: 7.95}
-  regions:
-  - name: Water
-    height: 0.4
-    color: {r: 0.023584902, g: 0.11119214, b: 1, a: 0}
-  - name: Sand
-    height: 0.5
-    color: {r: 0.9245283, g: 0.72485864, b: 0.38812745, a: 0}
-  - name: Grass
-    height: 0.7
-    color: {r: 0.101137824, g: 0.4339623, b: 0.059362777, a: 0}
-  - name: Rock
-    height: 0.9
-    color: {r: 0.254717, g: 0.1764227, b: 0.15018691, a: 0}
-  - name: Snow
-    height: 1
-    color: {r: 1, g: 1, b: 1, a: 0}
-  autoUpdate: 1
-  renderer: {fileID: 672077660}
+  lacunarity: 1
+  seed: 0
+  offset: {x: 0, y: 0}
+  regions: []
+  autoUpdate: 0
+  renderer: {fileID: 0}
 --- !u!64 &672077659
 MeshCollider:
   m_ObjectHideFlags: 0
